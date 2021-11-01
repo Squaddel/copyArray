@@ -1,2 +1,2 @@
 ## Copy Array
-This Program copies an Array of numbers into a second Array using the language C.
+This Program converts an Array of numbers into their corresponding letters in the Alphabet, copies them into a second Array and then gives out the letters.

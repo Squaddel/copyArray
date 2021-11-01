@@ -2,18 +2,22 @@
 
 int main(int argc, char const *argv[])
 {
-    int length = 5;
-    int test[] = {1,2,3,4,5};
-    int new[length];
+    int test[] = {1,2,3,4,5,10,11};
+    int len = sizeof(test) / sizeof(test[0]);
 
-    for(int i = 0; i < length; i++)
+
+    int new[len];
+    char tmp;
+
+    for(int i = 0; i < len; i++)
     {
-        new[i] = test[i];
+        tmp = test[i] + 64;
+        new[i] = tmp;
     }
 
-    for(int i = 0; i < length; i++)
+    for(int i = 0; i < len; i++)
     {
-        printf("%i", new[i]);
+        printf("%c", new[i]);
     }
 
     return 0;
